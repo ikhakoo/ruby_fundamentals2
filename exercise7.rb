@@ -17,3 +17,9 @@ each_cohort(students)
 cohort_names = students.keys
 puts "The cohort names are:"
 puts cohort_names
+
+students.each do |key, value|
+	students[key] = value * 1.05
+end
+
+each_cohort(students)
