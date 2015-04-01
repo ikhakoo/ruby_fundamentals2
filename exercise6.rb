@@ -10,6 +10,7 @@ end
 
 print_items(grocery_list)
 puts "You have #{grocery_list.length} items in your list"
+puts "The second item in your list is " + grocery_list[1]
 
 if grocery_list.include?("bananas")
 	puts "You need to pick-up bananas"
