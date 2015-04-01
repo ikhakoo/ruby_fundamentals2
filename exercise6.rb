@@ -39,3 +39,4 @@ elsif result == "r" || result == "remove"
 elsif result == "d" || result == "done"
 	puts "Thanks for using the Grocery List Manager"
 end
+
