@@ -23,3 +23,6 @@ students.each do |key, value|
 end
 
 each_cohort(students)
+
+students.delete(:cohort2)
+each_cohort(students)
