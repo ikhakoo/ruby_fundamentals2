@@ -26,3 +26,10 @@ each_cohort(students)
 
 students.delete(:cohort2)
 each_cohort(students)
+
+x = 0
+students.each do |key, value|
+	x += value
+end
+
+puts x.to_s + " is the total number of students"
