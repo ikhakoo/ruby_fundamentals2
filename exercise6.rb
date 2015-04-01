@@ -8,9 +8,9 @@ def print_items(list)
 	end
 end
 
-print_items(grocery_list)
+sorted_list = print_items(grocery_list.sort)
 puts "You have #{grocery_list.length} items in your list"
-puts "The second item in your list is " + grocery_list[1]
+puts "The second item in your list is " + sorted_list[1]
 
 if grocery_list.include?("bananas")
 	puts "You need to pick-up bananas"
@@ -27,14 +27,14 @@ if result == "a" || result == "add"
 	add = gets.chomp
 	grocery_list << add
 	puts "Here is a copy of the updated list!"
-	print_items(grocery_list)
+	print_items(grocery_list.sort)
 	puts "You have #{grocery_list.length} items in your list"
 elsif result == "r" || result == "remove"
 	puts "What would you like to remove?"
 	remove = gets.chomp
 	grocery_list.delete(remove)
 	puts "Here is an updated copy of the list!"
-	print_items(grocery_list)
+	print_items(grocery_list.sort)
 	puts "You have #{grocery_list.length} items in your list"
 elsif result == "d" || result == "done"
 	puts "Thanks for using the Grocery List Manager"
