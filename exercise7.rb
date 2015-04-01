@@ -6,6 +6,14 @@ students = {
 
 students[:cohort4] = 43
 
-students.each do |key, value|
-	puts "#{key}" + ":" + " #{value} students"
+def each_cohort(list)
+	list.each do |key, value|
+		puts "#{key}" + ":" + " #{value} students"
+	end
 end
+
+each_cohort(students)
+
+cohort_names = students.keys
+puts "The cohort names are:"
+puts cohort_names
